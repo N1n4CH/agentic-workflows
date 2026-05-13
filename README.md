@@ -8,9 +8,10 @@ RAG, generates a personalised recommendation, fetches current job openings and
 assembles a salary-informed career report - all without manual intervention
 between steps.
 
-This project represents the synthesis of the full analytical pipeline built across all
-previous projects: the skill taxonomy (Project 3), job market archetypes and
-DistilBERT embeddings (Project 4) and the GPT-2 recommendation generator (Project 5).
+This project represents the synthesis of the full analytical pipeline built
+across all previous projects: the skill taxonomy (Project 3), job market
+archetypes and DistilBERT embeddings (Project 4), and the structured
+recommendation templates informed by the fine-tuning work of Project 5.
 
 ---
 
@@ -27,14 +28,11 @@ DistilBERT embeddings (Project 4) and the GPT-2 recommendation generator (Projec
 
 **3. Copy required files from previous projects**
 
-The following files must be present in the project folder before running
-the notebook. They are not included in the repository due to size constraints:
+The following file must be present in the project folder before running
+the notebook. 
 
     # From Project 4 (deep-learning-systems/)
     cp ../deep-learning-systems/adzuna_ai_jobs_europe_enriched.csv ./
-
-    # From Project 5 (generative-ai-applications/)
-    cp -r ../generative-ai-applications/gpt2_career_advisor ./
 
 **4. Open and run the notebook**
 
@@ -55,7 +53,6 @@ Run all cells in order via **Kernel → Restart & Run All**
 |------|-------------|
 | `agentic_system.ipynb` | Main notebook - agent implementation and execution |
 | `adzuna_ai_jobs_europe_enriched.csv` | Job postings for FAISS index - copy from Project 4 |
-| `gpt2_career_advisor/` | Fine-tuned GPT-2 weights - copy from Project 5 |
 | `Agentic_AI_System_Design_Report.pdf` | Written report with citations |
 | `requirements.txt` | Python dependencies (generated via `pip freeze`) |
 
